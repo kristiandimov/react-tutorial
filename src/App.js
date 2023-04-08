@@ -4,17 +4,9 @@ import { useEffect ,useState} from "react";
 import './App.css';
 import SearchIcon from './search.svg'
 import MovieCard from "./MovieCard";
-//f76603f1
+
 const API_KEY = 'f76603f1'
 const API_URL = 'http://www.omdbapi.com/?apikey=' + API_KEY
-
-const movie = {
-    "Title": "Spiderman",
-    "Year": "1990",
-    "imdbID": "tt0100669",
-    "Type": "movie",
-    "Poster": "N/A"
-}
 
 const App = () => {
     const [movies,setMovies] = useState([]);
